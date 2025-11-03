@@ -12,6 +12,9 @@ function updateGreeting() {
   clickCount++;
   greetingElement.textContent = "Hello, Browser JavaScript!";
   countElement.textContent = `Button clicks: ${clickCount}`;
+  if (clickCount >= 5) {
+    greetingElement.style.color = "blue";
+  }
 }
 
 function resetClicks() {
