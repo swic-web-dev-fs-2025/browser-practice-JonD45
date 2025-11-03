@@ -1,16 +1,22 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hello Browser JavaScript</title>
-</head>
-<body>
-  <h1 id="greeting">Hello, Console JavaScript!</h1>
-  <button id="change-greeting">Update Greeting</button>
-  <button id="reset-clicks">Reset Clicks</button>
-  <p id="click-count">Button clicks: 0</p>
-  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello Browser JavaScript</title>
+  </head>
+  <body>
+    <h1 id="greeting">Hello, Console JavaScript!</h1>
+    <button id="change-greeting">Update Greeting</button>
+    <button id="reset-clicks">Reset Clicks</button>
+    <input
+      type="text"
+      id="custom-greeting"
+      placeholder="Enter custom greeting"
+    />
+    <button id="set-greeting">Set Custom Greeting</button>
+    <p id="click-count">Button clicks: 0</p>
+
     <script type="module" src="./src/main.js"></script>
-</body>
+  </body>
 </html>

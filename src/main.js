@@ -24,3 +24,10 @@ function resetClicks() {
 
 button.addEventListener("click", updateGreeting);
 button2.addEventListener("click", resetClicks);
+
+const customGreetingInput = document.getElementById("custom-greeting");
+const setGreetingButton = document.getElementById("set-greeting");
+
+setGreetingButton.addEventListener("click", () => {
+  greetingElement.textContent = customGreetingInput.value;
+});
